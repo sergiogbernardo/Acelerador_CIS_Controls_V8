@@ -1,0 +1,989 @@
+[
+{
+    "id": 1,
+    "nome": "Inventário e controle de ativos da empresa",
+    "descricao": "Gerenciar ativamente (inventariar, rastrear e corrigir) todos os ativos da empresa (dispositivos de usuário final, incluindo portáteis e móveis; dispositivos de rede; dispositivos não informáticos / IoT - Internet das Coisas; e servidores) conectados à infraestrutura fisicamente, virtualmente, remotamente, e aqueles em ambientes de nuvem, para saber com precisão a totalidade de ativos que precisam ser monitorados e protegidos dentro da empresa. Isso também apoiará a identificação de ativos não autorizados e não gerenciados para remover ou corrigir.",
+    "subcontroles": [
+        {
+            "id": "1.1",
+            "nome": "Estabelecer e manter um inventário detalhado de ativos da empresa",
+            "descricao": "Estabelecer e manter um inventário preciso, detalhado e atualizado de todos os ativos da empresa com potencial para armazenar ou processar dados, incluindo: dispositivos de usuário final (incluindo portáteis e móveis), dispositivos de rede, não informática / IoT dispositivos e servidores. Certificar-se de que o inventário registre o endereço de rede (se estático), endereço de hardware, nome da máquina, proprietário do ativo corporativo, departamento para cada ativo e se o ativo foi aprovado para se conectar à rede. Para dispositivos móveis de usuário final, as ferramentas do tipo MDM podem oferecer suporte a esse processo, quando apropriado. Este inventário inclui ativos conectados à infraestrutura fisicamente, virtualmente, remotamente e aqueles dentro de ambientes de nuvem. Além disso, inclui ativos que são regularmente conectados à infraestrutura de rede da empresa, mesmo que não estejam sob o controle da empresa. Revisar e atualizar o inventário de todos os ativos da empresa semestralmente ou com maior frequência."
+        },
+        {
+            "id": "1.2",
+            "nome": "Adereçar ativos não autorizados",
+            "descricao": "Certificar-se de que existe um processo para lidar com ativos não autorizados semanalmente. A empresa pode escolher remover o ativo da rede, negar que o ativo se conecte remotamente à rede ou colocar o ativo em quarentena."
+        },
+        {
+            "id": "1.3",
+            "nome": "Utilizar uma ferramenta de descoberta ativa",
+            "descricao": "Utilizar uma ferramenta de descoberta ativa para identificar ativos conectados à rede da empresa. Configurar a ferramenta de descoberta ativa para executar diariamente ou com maior frequência."
+        },
+        {
+            "id": "1.4",
+            "nome": "Usar o registro do protocolo de configuração dinâmica de hosts (DHCP) para atualizar o inventário de ativos corporativos",
+            "descricao": "Usar o log de DHCP em todos os servidores DHCP ou ferramentas de gerenciamento de endereço de protocolo da Internet (IP) para atualizar o inventário de ativos da empresa. Revisar e usar logs para atualizar o inventário de ativos da empresa semanalmente ou com maior frequência."
+        },
+        {
+            "id": "1.5",
+            "nome": "Usar uma ferramenta de descoberta de ativos passivos",
+            "descricao": "Usar uma ferramenta de descoberta passiva para identificar ativos conectados à rede da empresa. Revisar e Usar varreduras para atualizar o inventário de ativos da empresa pelo menos semanalmente ou com maior frequência."
+        }
+    ]
+},
+{
+    "id": 2,
+    "nome": "Inventário e controle de ativos de software",
+    "descricao": "Gerenciar ativamente (inventarie, rastreie e corrija) todos os softwares (sistemas operacionais e aplicações) na rede para que apenas softwares autorizados sejam instalados e possam ser executados, e que softwares não autorizados e não gerenciados sejam encontrados e impedidos de instalação ou execução.",
+    "subcontroles": [
+        {
+            "id": "2.1",
+            "nome": "Estabelecer e manter um inventário de software",
+            "descricao": "Estabelecer e manter um inventário detalhado de todos os softwares licenciados instalados em ativos corporativos. O inventário de software deve documentar o título, o editor, a data inicial de instalação / uso e a finalidade comercial de cada entrada; quando apropriado, inclua o Uniform Resource Locator (URL), app store(s), versão(ões), mecanismo de implantação e data de desativação. Revisar e atualizar o inventário de software semestralmente ou com maior frequência."
+        },
+        {
+            "id": "2.2",
+            "nome": "Certificar-se de que o software autorizado seja atualmente suportado",
+            "descricao": "Certificar-se de que apenas o software com suporte atualmente seja designado como autorizado no inventário de software para ativos corporativos. Se o software não for compatível, mas necessário para o cumprimento da missão da empresa, documentar uma exceção detalhando os controles de mitigação e a aceitação do risco residual. Para qualquer software sem suporte sem uma documentação de exceção, designar como não autorizado. Revisar a lista de software para verificar o suporte de software pelo menos uma vez por mês ou com maior frequência."
+        },
+        {
+            "id": "2.3",
+            "nome": "Adereçar a software não autorizado",
+            "descricao": "Certificar-se de que o software não autorizado seja removido do uso em ativos corporativos ou receber uma exceção documentada. Revisar mensalmente ou com maior frequência."
+        },
+        {
+            "id": "2.4",
+            "nome": "Utilize ferramentas automatizadas de inventário de software",
+            "descricao": "Utilizar ferramentas de inventário de software, quando possível, em toda a empresa para automatizar a descoberta e documentação do software instalado."
+        },
+        {
+            "id": "2.5",
+            "nome": "Lista de permissões para software autorizado",
+            "descricao": "Usar controles técnicos, como a lista de permissões de aplicativos, para garantir que apenas software autorizado possa executar ou ser acessado. Reavaliar semestralmente ou com maior frequência."
+        },
+        {
+            "id": "2.6",
+            "nome": "Bibliotecas autorizadas de lista de permissões",
+            "descricao": "Usar controles técnicos para garantir que apenas bibliotecas de software autorizadas, como arquivos .dll, .ocx, .so, etc. específicos, tenham permissão para carregar em um processo do sistema. Bloquear o carregamento de bibliotecas não autorizadas em um processo do sistema. Reavaliar semestralmente ou com maior frequência."
+        },
+        {
+            "id": "2.7",
+            "nome": "Scripts autorizados da lista de permissões",
+            "descricao": "Usar controles técnicos, como assinaturas digitais e controle de versão, para garantir que apenas scripts autorizados, como arquivos .ps1, .py, etc. específicos, tenham permissão para executar. Bloquear a execução de scripts não autorizados. Reavaliar semestralmente ou com maior frequência."
+        }
+    ]
+},
+{
+    "id": 3,
+    "nome": "Proteção de dados",
+    "descricao": "Desenvolver processos e controles técnicos para identificar, classificar, manusear, reter e descartar dados com segurança.",
+    "subcontroles": [
+        {
+            "id": "3.1",
+            "nome": "Estabelecer e manter um processo de gerenciamento de dados",
+            "descricao": "Estabelecer e manter um processo de gerenciamento de dados. No processo, tratar da sensibilidade dos dados, do proprietário dos dados, do manuseio dos dados, dos limites de retenção de dados e dos requisitos de descarte, com base em padrões de sensibilidade e retenção para a empresa. Revisar e atualizar a documentação anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        },
+        {
+            "id": "3.2",
+            "nome": "Estabelecer e manter um inventário de dados",
+            "descricao": "Estabelecer e manter um inventário de dados, com base no processo de gerenciamento de dados da empresa. Dados confidenciais do inventário, no mínimo. Revisar e atualizar o inventário anualmente, no mínimo, com prioridade nos dados confidenciais."
+        },
+        {
+            "id": "3.3",
+            "nome": "Configurar listas de controle de acesso a dados",
+            "descricao": "Configurar listas de controle de acesso a dados com base na necessidade de um usuário saber. Aplicar listas de controle de acesso a dados, também conhecidas como permissões de acesso, a sistemas de arquivos, bancos de dados e aplicativos locais e remotos."
+        },
+        {
+            "id": "3.4",
+            "nome": "Aplicar retenção de dados",
+            "descricao": "Reter os dados de acordo com o processo de gerenciamento de dados da empresa. A retenção de dados deve incluir cronogramas mínimo e máximo."
+        },
+        {
+            "id": "3.5",
+            "nome": "Descartar de dados com segurança",
+            "descricao": "Eliminar os dados com segurança conforme descrito no processo de gerenciamento de dados da empresa. Certificar-se de que o processo e o método de descarte sejam proporcionais à sensibilidade dos dados."
+        },
+        {
+            "id": "3.6",
+            "nome": "Criptografar dados em dispositivos de usuário final",
+            "descricao": "Criptografar os dados em dispositivos do usuário final contendo dados confidenciais. Implementações de exemplo podem incluir: Windows BitLocker®, Apple FileVault®, Linux® dm-crypt."
+        },
+        {
+            "id": "3.7",
+            "nome": "Estabelecer e manter um esquema de classificação de dados",
+            "descricao": "Estabelecer e manter um esquema geral de classificação de dados para a empresa. As empresas podem usar rótulos, como “Sensível”, “Confidencial” e “Público”, e classificar seus dados de acordo com esses rótulos. Revisar e atualizar o esquema de classificação anualmente ou quando ocorrerem mudanças significativas na empresa que possam impactar esta proteção."
+        },
+        {
+            "id": "3.8",
+            "nome": "Fluxos de dados de documentos",
+            "descricao": "Fluxos de dados do documento. A documentação do fluxo de dados inclui fluxos de dados do provedor de serviços e deve ser baseada no processo de gerenciamento de dados da empresa. Revisar e atualizar a documentação anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        },
+        {
+            "id": "3.9",
+            "nome": "Criptografar dados em mídia removível",
+            "descricao": "Criptografar os dados em mídia removível."
+        },
+        {
+            "id": "3.10",
+            "nome": "Criptografar dados confidenciais em trânsito",
+            "descricao": "Criptografar dados confidenciais em trânsito. Implementações de exemplo podem incluir: Transport Layer Security (TLS) e Open Secure Shell (OpenSSH)."
+        },
+        {
+            "id": "3.11",
+            "nome": "Criptografar dados confidenciais em repouso",
+            "descricao": "Criptografar dados confidenciais em repouso em servidores, aplicativos e bancos de dados que contenham dados confidenciais. A criptografia da camada de armazenamento, também conhecida como criptografia do lado do servidor, atende ao requisito mínimo desta proteção. Métodos de criptografia adicionais podem incluir criptografia de camada de aplicativo, também conhecida como criptografia do lado do cliente, em que o acesso ao (s) dispositivo (s) de armazenamento de dados não permite o acesso aos dados de texto simples."
+        },
+        {
+            "id": "3.12",
+            "nome": "Segmentar processamento e armazenamento de dados com base na sensibilidade",
+            "descricao": "Segmentar o processamento e armazenamento de dados com base na sensibilidade dos dados. Não processar dados confidenciais em ativos corporativos destinados a dados de menor sensibilidade."
+        },
+        {
+            "id": "3.13",
+            "nome": "Implantar uma solução de prevenção contra perda de dados",
+            "descricao": "Implementar uma ferramenta automatizada, como uma ferramenta de prevenção de perda de dados (DLP) baseada em host, para identificar todos os dados confidenciais armazenados, processados ​​ou transmitidos por meio de ativos da empresa, incluindo aqueles situados no local ou em um provedor de serviços remoto, e atualizar o inventário de dados confidenciais da empresa."
+        },
+        {
+            "id": "3.14",
+            "nome": "Registrar acesso a dados confidenciais",
+            "descricao": "Registrar o acesso a dados confidenciais, incluindo modificação e descarte."
+        }
+    ]
+},
+{
+    "id": 4,
+    "nome": "Configuração segura de ativos corporativos e software",
+    "descricao": "Estabelecer e manter a configuração segura de ativos corporativos e software.",
+    "subcontroles": [
+        {
+            "id": "4.1",
+            "nome": "Estabelecer e manter um processo de configuração seguro",
+            "descricao": "Estabelecer e manter um processo de configuração seguro para ativos corporativos (dispositivos de usuário final, incluindo dispositivos portáteis e móveis, não computacionais / IoT e servidores) e software (sistemas operacionais e aplicativos). Revisar e atualizar a documentação anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        },
+        {
+            "id": "4.2",
+            "nome": "Estabelecer e manter um processo de configuração seguro para infraestrutura de rede",
+            "descricao": "Estabelecer e manter um processo de configuração seguro para dispositivos de rede. Revisar e atualizar a documentação anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        },
+        {
+            "id": "4.3",
+            "nome": "Configurar o bloqueio automático de sessão em ativos corporativos",
+            "descricao": "Configurar o bloqueio automático de sessão em ativos corporativos após um período definido de inatividade. Para sistemas operacionais de uso geral, o período não deve exceder 15 minutos. Para dispositivos móveis de usuário final, o período não deve exceder 2 minutos."
+        },
+        {
+            "id": "4.4",
+            "nome": "Implementar e gerenciar um firewall em servidores",
+            "descricao": "Implementar e gerenciar um firewall nos servidores, onde houver suporte. Implementações de exemplo incluem um firewall virtual, firewall do sistema operacional ou um agente de firewall de terceiros."
+        },
+        {
+            "id": "4.5",
+            "nome": "Implementar e gerenciar um firewall em dispositivos de usuário final",
+            "descricao": "Implementar e gerenciar um firewall baseado em host ou uma ferramenta de filtragem de porta em dispositivos de usuário final, com uma regra de negação padrão que elimina todo o tráfego, exceto os serviços e portas que são explicitamente permitidos."
+        },
+        {
+            "id": "4.6",
+            "nome": "Gerenciar com segurança ativos corporativos e software",
+            "descricao": "Gerenciar com segurança ativos e software corporativos. Implementações de exemplo incluem gerenciamento de configuração por meio de infraestrutura controlada por versão como código e acesso a interfaces administrativas em protocolos de rede seguros, como Secure Shell (SSH) e Hypertext Transfer Protocol Secure (HTTPS). Não usar protocolos de gerenciamento inseguros, como Telnet (Teletype Network) e HTTP, a menos que seja operacionalmente essencial."
+        },
+        {
+            "id": "4.7",
+            "nome": "Gerenciar contas padrão em ativos corporativos e software",
+            "descricao": "Gerenciar contas padrão em ativos e software corporativos, como root, administrador e outras contas de fornecedores pré-configuradas. Implementações de exemplo podem incluir: desativar contas padrão ou torná-las inutilizáveis."
+        },
+        {
+            "id": "4.8",
+            "nome": "Desinstalar ou desativar serviços desnecessários em ativos e software da empresa",
+            "descricao": "Desinstalar ou desativar serviços desnecessários em ativos e software corporativos, como um serviço de compartilhamento de arquivos não utilizado, módulo de aplicativo da web ou função de serviço."
+        },
+        {
+            "id": "4.9",
+            "nome": "Configurar servidores DNS confiáveis em ativos corporativos",
+            "descricao": "Configurar servidores DNS confiáveis ​​em ativos corporativos. As implementações de exemplo incluem: configuração de ativos para usar servidores DNS controlados pela empresa e/ou servidores DNS confiáveis ​​acessíveis externamente."
+        },
+        {
+            "id": "4.10",
+            "nome": "Aplicar o bloqueio automático de dispositivos em dispositivos portáteis de usuário final",
+            "descricao": "Impor o bloqueio automático de dispositivo seguindo um limite predeterminado de tentativas de autenticação local com falha em dispositivos portáteis de usuário final, quando compatível. Para laptops, não permitir mais de 20 tentativas de autenticação com falha; para tablets e smartphones, não mais do que 10 tentativas de autenticação com falha. Implementações de exemplo incluem Microsoft® InTune Device Lock e Apple® Configuration Profile maxFailedAttempts."
+        },
+        {
+            "id": "4.11",
+            "nome": "Aplicar capacidade de apagamento remoto em dispositivos portáteis de usuário final",
+            "descricao": "Limpar remotamente os dados corporativos de dispositivos portáteis de usuário final de propriedade da empresa quando for considerado apropriado, como dispositivos perdidos ou roubados, ou quando um indivíduo não oferecer mais suporte à empresa."
+        },
+        {
+            "id": "4.12",
+            "nome": "Espaços de trabalho corporativos separados em dispositivos móveis de usuário final",
+            "descricao": "Certificar-se de que espaços de trabalho corporativos separados sejam usados ​​em dispositivos móveis de usuário final, onde houver suporte. Implementações de exemplo incluem o uso de um Apple® Configuration Profile ou Android ™ Work Profile para separar aplicativos e dados corporativos de aplicativos e dados pessoais."
+        }
+    ]
+},
+{
+    "id": 5,
+    "nome": "Gestão de Contas",
+    "descricao": "Usar processos e ferramentas para atribuir e gerenciar autorização para credenciais para contas de usuário, incluindo contas de administrador, bem como contas de serviço, para ativos corporativos e software.",
+    "subcontroles": [
+        {
+            "id": "5.1",
+            "nome": "Estabelecer e manter um inventário de contas",
+            "descricao": "Estabelecer e manter um inventário de todas as contas gerenciadas na empresa. O inventário deve incluir contas de usuário e administrador. O inventário deve conter, no mínimo, o nome da pessoa, nome de usuário, datas de início / término e departamento. Valide se todas as contas ativas estão autorizadas, em uma programação recorrente no mínimo trimestralmente ou com maior frequência."
+        },
+        {
+            "id": "5.2",
+            "nome": "Usar senhas exclusivas",
+            "descricao": "Usar senhas exclusivas para todos os ativos da empresa. A implementação de práticas recomendadas inclui, no mínimo, uma senha de 8 caracteres para contas que usam MFA e uma senha de 14 caracteres para contas que não usam MFA."
+        },
+        {
+            "id": "5.3",
+            "nome": "Desativar contas inativas",
+            "descricao": "Excluir ou desativar quaisquer contas inativas após um período de 45 dias de inatividade, quando houver suporte."
+        },
+        {
+            "id": "5.4",
+            "nome": "Restringir privilégios de administrador a contas de administrador dedicadas",
+            "descricao": "Restringir os privilégios de administrador a contas de administrador dedicadas em ativos corporativos. Realizar atividades gerais de computação, como navegação na Internet, e-mail e uso do pacote de produtividade, a partir da conta primária não privilegiada do usuário."
+        },
+        {
+            "id": "5.5",
+            "nome": "Estabelecer e manter um inventário de contas de serviço",
+            "descricao": "Estabelecer e manter um inventário de contas de serviço. O inventário, no mínimo, deve conter o proprietário do departamento, a data da revisão e o propósito. Realizar análises de contas de serviço para validar se todas as contas ativas estão autorizadas, em uma programação recorrente, no mínimo trimestralmente ou com maior frequência."
+        },
+        {
+            "id": "5.6",
+            "nome": "Centralizar o gerenciamento de contas",
+            "descricao": "Centralizar o gerenciamento de contas por meio de um diretório ou serviço de identidade."
+        }
+    ]
+},
+{
+    "id": 6,
+    "nome": "Gerenciamento de controle de acesso",
+    "descricao": "Usar processos e ferramentas para criar, atribuir, gerenciar e revogar credenciais de acesso e privilégios para contas de usuário, administrador e serviço para ativos e software corporativos.",
+    "subcontroles": [
+        {
+            "id": "6.1",
+            "nome": "Estabelecer um Processo de Concessão de Acesso",
+            "descricao": "Estabelecer e seguir um processo, de preferência automatizado, para conceder acesso aos ativos da empresa mediante nova contratação, concessão de direitos ou mudança de função de um usuário."
+        },
+        {
+            "id": "6.2",
+            "nome": "Estabelecer um Processo de Revogação de Acesso",
+            "descricao": "Estabelecer e seguir um processo, de preferência automatizado, para revogar o acesso aos ativos da empresa, por meio da desativação de contas imediatamente após o encerramento, revogação de direitos ou mudança de função de um usuário. Desativar contas, em vez de excluí-las, pode ser necessário para preservar as trilhas de auditoria."
+        },
+        {
+            "id": "6.3",
+            "nome": "Exigir MFA para aplicativos expostos externamente",
+            "descricao": "Exigir que todos os aplicativos expostos externamente, corporativos ou de terceiros, apliquem o MFA quando houver suporte. Aplicar o MFA por meio de um serviço de diretório ou provedor de SSO é uma implementação satisfatória desta proteção."
+        },
+        {
+            "id": "6.4",
+            "nome": "Exigir MFA para acesso remoto à rede",
+            "descricao": "Exigir MFA para acesso remoto à rede."
+        },
+        {
+            "id": "6.5",
+            "nome": "Exigir MFA para acesso administrativo",
+            "descricao": "Exigir MFA para todas as contas de acesso administrativo, onde houver suporte, em todos os ativos da empresa, sejam gerenciados no local ou por meio de um provedor terceirizado."
+        },
+        {
+            "id": "6.6",
+            "nome": "Estabelecer e manter um inventário de sistemas de autenticação e autorização",
+            "descricao": "Estabelecer e manter um inventário dos sistemas de autenticação e autorização da empresa, incluindo aqueles hospedados no local ou em um provedor de serviços remoto. Revisar e atualizar o inventário, no mínimo, anualmente ou com maior frequência."
+        },
+        {
+            "id": "6.7",
+            "nome": "Centralizar o controle de acesso",
+            "descricao": "Centralizar o controle de acesso para todos os ativos da empresa por meio de um serviço de diretório ou provedor de SSO, onde houver suporte."
+        },
+        {
+            "id": "6.8",
+            "nome": "Definir e manter o controle de acesso baseado em funções",
+            "descricao": "Definir e manter o controle de acesso baseado em funções, determinando e documentando os direitos de acesso necessários para cada função dentro da empresa para cumprir com sucesso suas funções atribuídas. Realizar análises de controle de acesso de ativos corporativos para validar se todos os privilégios estão autorizados, em uma programação recorrente, no mínimo anualmente ou com maior frequência."
+        }
+    ]
+},
+{
+    "id": 7,
+    "nome": "Gerenciamento Contínuo de Vulnerabilidade",
+    "descricao": "Desenvolver um plano para avaliar e rastrear vulnerabilidades continuamente em todos os ativos corporativos dentro da infraestrutura da empresa, a fim de remediar e minimizar a janela de oportunidade para os invasores. Monitorar fontes da indústria pública e privada para novas informações sobre ameaças e vulnerabilidades.",
+    "subcontroles": [
+        {
+            "id": "7.1",
+            "nome": "Estabelecer e manter um processo de gerenciamento de vulnerabilidade",
+            "descricao": "Estabelecer e manter um processo de gerenciamento de vulnerabilidade documentado para ativos corporativos. Revisar e atualizar a documentação anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        },
+        {
+            "id": "7.2",
+            "nome": "Estabelecer e manter um processo de remediação",
+            "descricao": "Estabelecer e manter uma estratégia de remediação baseada em risco documentada em um processo de remediação, com revisões mensais ou mais frequentes."
+        },
+        {
+            "id": "7.3",
+            "nome": "Executar gerenciamento automatizado de patches do sistema operacional",
+            "descricao": "Executar atualizações do sistema operacional em ativos corporativos por meio do gerenciamento automatizado de patches mensalmente ou com maior frequência."
+        },
+        {
+            "id": "7.4",
+            "nome": "Executar gerenciamento automatizado de patches de aplicativos",
+            "descricao": "Realizar atualizações de aplicativos em ativos corporativos por meio do gerenciamento automatizado de patches mensalmente ou com maior frequência."
+        },
+        {
+            "id": "7.5",
+            "nome": "Realizar varreduras automatizadas de vulnerabilidade de ativos internos da empresa",
+            "descricao": "Realizar varreduras automatizadas de vulnerabilidade de ativos corporativos internos trimestralmente ou com maior frequência. Realizar varreduras autenticadas e não autenticadas, usando uma ferramenta de varredura de vulnerabilidade compatível com SCAP."
+        },
+        {
+            "id": "7.6",
+            "nome": "Realizar varreduras automatizadas de vulnerabilidade de ativos corporativos expostos externamente",
+            "descricao": "Executar varreduras de vulnerabilidade automatizadas de ativos corporativos expostos externamente usando uma ferramenta de varredura de vulnerabilidade compatível com SCAP. Executar varreduras mensalmente ou com maior frequência."
+        },
+        {
+            "id": "7.7",
+            "nome": "Corrigir vulnerabilidades detectadas",
+            "descricao": "Corrigir as vulnerabilidades detectadas no software por meio de processos e ferramentas em uma base mensal, ou mais frequente, com base no processo de correção."
+        }
+    ]
+},
+{
+    "id": 8,
+    "nome": "Gerenciamento de registro de auditoria",
+    "descricao": "Coletar, alertar, analisar e reter logs de auditoria de eventos que podem ajudar a detectar, compreender ou recuperar-se de um ataque.",
+    "subcontroles": [
+        {
+            "id": "8.1",
+            "nome": "Estabelecer e manter um processo de gerenciamento de registro de auditoria",
+            "descricao": "Estabelecer e manter um processo de gerenciamento de registro de auditoria que defina os requisitos de registro da empresa. No mínimo, tratar da coleta, revisão e retenção de logs de auditoria para ativos corporativos. Revisar e atualizar a documentação anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        },
+        {
+            "id": "8.2",
+            "nome": "Coletar registros de auditoria",
+            "descricao": "Coletar logs de auditoria. Certificar-se de que o registro, de acordo com o processo de gerenciamento de registro de auditoria da empresa, foi habilitado em todos os ativos da empresa."
+        },
+        {
+            "id": "8.3",
+            "nome": "Garantir armazenamento adequado de registros de auditoria",
+            "descricao": "Certificar-se de que os destinos de registro mantenham armazenamento adequado para cumprir o processo de gerenciamento de registro de auditoria da empresa."
+        },
+        {
+            "id": "8.4",
+            "nome": "Padronizar a sincronização de tempo",
+            "descricao": "Padronizar a sincronização de tempo. Configurar pelo menos duas fontes de tempo sincronizadas em ativos corporativos, onde houver suporte."
+        },
+        {
+            "id": "8.5",
+            "nome": "Coletar registros de auditoria detalhados",
+            "descricao": "Configurar o registro de auditoria detalhado para ativos corporativos contendo dados confidenciais. Incluir a origem do evento, data, nome de usuário, carimbo de data / hora, endereços de origem, endereços de destino e outros elementos úteis que podem ajudar em uma investigação forense."
+        },
+        {
+            "id": "8.6",
+            "nome": "Coletar registros de auditoria de consulta DNS",
+            "descricao": "Coletar logs de auditoria de consulta de DNS em ativos corporativos, quando apropriado e com suporte."
+        },
+        {
+            "id": "8.7",
+            "nome": "Coletar registros de auditoria de solicitação de URL",
+            "descricao": "Coletar logs de auditoria de solicitação de URL em ativos corporativos, quando apropriado e com suporte."
+        },
+        {
+            "id": "8.8",
+            "nome": "Coletar registros de auditoria de linha de comando",
+            "descricao": "Coletar logs de auditoria de linha de comando. Implementações de exemplo incluem a coleta de logs de auditoria do PowerShell®, BASH ™ e terminais administrativos remotos."
+        },
+        {
+            "id": "8.9",
+            "nome": "Centralizar registros de auditoria",
+            "descricao": "Centralizar, na medida do possível, a coleta e retenção de logs de auditoria nos ativos da empresa."
+        },
+        {
+            "id": "8.10",
+            "nome": "Reter registros de auditoria",
+            "descricao": "Reter logs de auditoria em ativos corporativos por no mínimo 90 dias."
+        },
+        {
+            "id": "8.11",
+            "nome": "Conduzir revisões de registro de auditoria",
+            "descricao": "Realizar análises de logs de auditoria para detectar anomalias ou eventos anormais que possam indicar uma ameaça potencial. Faça avaliações semanais ou mais frequentes."
+        },
+        {
+            "id": "8.12",
+            "nome": "Coletar registros do provedor de serviços",
+            "descricao": "Coletar logs do provedor de serviços, onde houver suporte. Implementações de exemplo incluem coleta de eventos de autenticação e autorização, criação de dados e eventos de descarte e eventos de gerenciamento de usuário."
+        }
+    ]
+},
+{
+  "Controle_9": {
+    "Nome": "Proteções de e-mail e navegador da web",
+    "Descrição": "Melhorar as proteções e detecções de ameaças de vetores de e-mail e web, pois essas são oportunidades para os invasores manipularem o comportamento humano por meio do engajamento direto.",
+    "Subcontroles": [
+      {
+        "9.1": {
+          "Nome": "Garantir o uso apenas de navegadores e clientes de e-mail com suporte total",
+          "Descrição": "Certificar-se de que apenas navegadores e clientes de e-mail com suporte total tenham permissão para executar na empresa, usando apenas a versão mais recente dos navegadores e clientes de e-mail fornecidos pelo fornecedor."
+        }
+      },
+      {
+        "9.2": {
+          "Nome": "Usar serviços de filtragem de DNS",
+          "Descrição": "Usar os serviços de filtragem de DNS em todos os ativos da empresa para bloquear o acesso a domínios mal-intencionados conhecidos."
+        }
+      },
+      {
+        "9.3": {
+          "Nome": "Manter e aplicar filtros de URL baseados em rede",
+          "Descrição": "Aplicar e atualizar filtros de URL baseados em rede para limitar um ativo empresarial de se conectar a sites potencialmente maliciosos ou não aprovados. Implementações de exemplo incluem filtragem baseada em categoria, filtragem baseada em reputação ou através do uso de listas de bloqueio. Aplicar filtros para todos os ativos da empresa."
+        }
+      },
+      {
+        "9.4": {
+          "Nome": "Restringir extensões de cliente de e-mail e navegador desnecessárias ou não autorizadas",
+          "Descrição": "Restringir, seja por meio da desinstalação ou desativação, de qualquer navegador não autorizado ou desnecessário ou plug-ins de cliente de e-mail, extensões e aplicativos complementares."
+        }
+      },
+      {
+        "9.5": {
+          "Nome": "Implementar DMARC",
+          "Descrição": "Para diminuir a chance de emails falsificados ou modificados de domínios válidos, implementar a política e verificação DMARC, começando com a implementação do Sender Policy Framework (SPF) e os padrões DomainKeys Identified Mail (DKIM)."
+        }
+      },
+      {
+        "9.6": {
+          "Nome": "Bloquear tipos de arquivo desnecessários",
+          "Descrição": "Bloquear tipos de arquivo desnecessários que tentam entrar no gateway de e-mail da empresa."
+        }
+      },
+      {
+        "9.7": {
+          "Nome": "Implantar e manter proteções antimalware do servidor de e-mail",
+          "Descrição": "Implantar e manter proteções antimalware para servidores de e-mail, como verificação de anexos e/ou sandbox."
+        }
+      }
+    ]
+  }
+},
+{
+  "Controle_10": {
+    "Nome": "Defesas contra malware",
+    "Descrição": "Impedir ou controlar a instalação, disseminação e execução de aplicativos, códigos ou scripts maliciosos em ativos corporativos.",
+    "Subcontroles": [
+      {
+        "10.1": {
+          "Nome": "Implantar e manter software antimalware",
+          "Descrição": "Implantar e manter software anti-malware em todos os ativos da empresa."
+        }
+      },
+      {
+        "10.2": {
+          "Nome": "Configurar atualizações automáticas de assinatura antimalware",
+          "Descrição": "Configurar atualizações automáticas para arquivos de assinatura anti-malware em todos os ativos corporativos."
+        }
+      },
+      {
+        "10.3": {
+          "Nome": "Desativar execução automática e reprodução automática para mídia removível",
+          "Descrição": "Desativar a execução automática e a funcionalidade de execução automática de reprodução automática para mídia removível."
+        }
+      },
+      {
+        "10.4": {
+          "Nome": "Configurar a verificação automática antimalware de mídia removível",
+          "Descrição": "Configurar o software anti-malware para verificar automaticamente a mídia removível."
+        }
+      },
+      {
+        "10.5": {
+          "Nome": "Ativar recursos anti-exploração",
+          "Descrição": "Habilitar recursos anti-exploração em ativos e software corporativos, quando possível, como Microsoft® Data Execution Prevention (DEP), Windows® Defender Exploit Guard (WDEG) ou Apple® System Integrity Protection (SIP) e Gatekeeper ™."
+        }
+      },
+      {
+        "10.6": {
+          "Nome": "Gerenciar software antimalware de maneira centralizada",
+          "Descrição": "Gerenciar de maneira centralizada o software anti-malware."
+        }
+      },
+      {
+        "10.7": {
+          "Nome": "Usar software anti-malware baseado em comportamento",
+          "Descrição": "Usar software anti-malware baseado em comportamento."
+        }
+      }
+    ]
+  }
+},
+{
+  "Controle_11": {
+    "Nome": "Recuperação de dados",
+    "Descrição": "Estabelecer e manter práticas de recuperação de dados suficientes para restaurar ativos corporativos dentro do escopo para um estado pré-incidente e confiável.",
+    "Subcontroles": [
+      {
+        "11.1": {
+          "Nome": "Estabelecer e manter um processo de recuperação de dados",
+          "Descrição": "Estabelecer e manter um processo de recuperação de dados. No processo, abordar o escopo das atividades de recuperação de dados, a priorização da recuperação e a segurança dos dados de backup. Revisar e atualizar a documentação anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        }
+      },
+      {
+        "11.2": {
+          "Nome": "Executar backups automatizados",
+          "Descrição": "Executar backups automatizados de ativos corporativos dentro do escopo. Executar backups semanalmente ou com maior frequência, com base na confidencialidade dos dados."
+        }
+      },
+      {
+        "11.3": {
+          "Nome": "Proteger os dados de recuperação",
+          "Descrição": "Proteger os dados de recuperação com controles equivalentes aos dados originais. Encriptação de referência ou separação de dados, com base nos requisitos."
+        }
+      },
+      {
+        "11.4": {
+          "Nome": "Estabelecer e manter uma instância isolada de dados de recuperação",
+          "Descrição": "Estabelecer e manter uma instância isolada de dados de recuperação. Implementações de exemplo incluem destinos de backup de controle de versão por meio de sistemas ou serviços offline, na nuvem ou fora do local."
+        }
+      },
+      {
+        "11.5": {
+          "Nome": "Recuperação de dados de teste",
+          "Descrição": "Testar a recuperação do backup trimestralmente, ou com maior frequência, para obter uma amostra dos ativos corporativos dentro do escopo."
+        }
+      }
+    ]
+  }
+},
+{
+  "Controle_12": {
+    "Nome": "Gerenciamento de infraestrutura de rede",
+    "Descrição": "Estabelecer, implementar e gerenciar ativamente (rastrear, reportar, corrigir) dispositivos de rede, a fim de evitar que invasores explorem serviços de rede e pontos de acesso vulneráveis.",
+    "Subcontroles": [
+      {
+        "12.1": {
+          "Nome": "Certificar-se de que a infraestrutura de rede esteja atualizada",
+          "Descrição": "Certificar-se de que a infraestrutura de rede seja mantida atualizada. Implementações de exemplo incluem a execução da versão estável mais recente do software e/ou o uso de ofertas de rede como serviço (NaaS) atualmente suportadas. Revisar as versões do software mensalmente, ou com maior frequência, para verificar o suporte do software."
+        }
+      },
+      {
+        "12.2": {
+          "Nome": "Estabelecer e manter uma arquitetura de rede segura",
+          "Descrição": "Estabelecer e manter uma arquitetura de rede segura. Uma arquitetura de rede segura deve abordar segmentação, privilégio mínimo e disponibilidade, no mínimo."
+        }
+      },
+      {
+        "12.3": {
+          "Nome": "Gerenciar infraestrutura de rede com segurança",
+          "Descrição": "Gerenciar com segurança a infraestrutura de rede. Implementações de exemplo incluem infraestrutura controlada por versão como código e o uso de protocolos de rede seguros, como SSH e HTTPS."
+        }
+      },
+      {
+        "12.4": {
+          "Nome": "Estabelecer e manter diagrama (s) de arquitetura",
+          "Descrição": "Estabelecer e manter diagrama (s) de arquitetura e / ou outra documentação de sistema de rede. Revisar e atualizar a documentação anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        }
+      },
+      {
+        "12.5": {
+          "Nome": "Centralizar a autenticação, autorização e auditoria da rede (AAA)",
+          "Descrição": "Centralizar a rede AAA."
+        }
+      },
+      {
+        "12.6": {
+          "Nome": "Usar gerenciamento seguro de rede e protocolos de comunicação",
+          "Descrição": "Usar protocolos de comunicação e gerenciamento de rede seguros (por exemplo, 802.1X, Wi-Fi Protected Access 2 (WPA2) Enterprise ou superior)."
+        }
+      },
+      {
+        "12.7": {
+          "Nome": "Garantir que os dispositivos remotos utilizem uma VPN e estejam se conectando a uma infraestrutura AAA da empresa",
+          "Descrição": "Exigir que os usuários se autentiquem em serviços de autenticação e VPN gerenciados pela empresa antes de acessar os recursos da empresa em dispositivos de usuário final."
+        }
+      },
+      {
+        "12.8": {
+          "Nome": "Estabelecer e manter recursos de computação dedicados para todo o trabalho administrativo",
+          "Descrição": "Estabelecer e manter recursos de computação dedicados, fisicamente ou logicamente separados, para todas as tarefas administrativas ou tarefas que requerem acesso administrativo. Os recursos de computação devem ser segmentados da rede primária da empresa e não ter acesso à Internet permitido."
+        }
+      }
+    ]
+  }
+},
+{
+  "Controle_13": {
+    "Nome": "Monitoramento e defesa de rede",
+    "Descrição": "Operar processos e ferramentas para Estabelecer e manter monitoramento de rede abrangente e defesa contra ameaças de segurança em toda a infraestrutura de rede e base de usuários da empresa.",
+    "Subcontroles": [
+      {
+        "13.1": {
+          "Nome": "Centralizar o alerta de eventos de segurança",
+          "Descrição": "Centralizar os alertas de eventos de segurança em ativos corporativos para correlação e análise de log. A implementação de melhores práticas requer o uso de um SIEM, que inclui alertas de correlação de eventos definidos pelo fornecedor. Uma plataforma de análise de log configurada com alertas de correlação relevantes para a segurança também atende a esta proteção."
+        }
+      },
+      {
+        "13.2": {
+          "Nome": "Implantar uma solução de detecção de intrusão baseada em host",
+          "Descrição": "Implantar uma solução de detecção de intrusão baseada em host em ativos corporativos, quando apropriado e/ou compatível."
+        }
+      },
+      {
+        "13.3": {
+          "Nome": "Implantar uma solução de detecção de intrusão de rede",
+          "Descrição": "Implantar uma solução de detecção de intrusão de rede em ativos corporativos, quando apropriado. Implementações de exemplo incluem o uso de um Sistema de Detecção de Intrusão de Rede (NIDS) ou serviço de provedor de serviço de nuvem equivalente (CSP)."
+        }
+      },
+      {
+        "13.4": {
+          "Nome": "Realizar filtragem de tráfego entre segmentos de rede",
+          "Descrição": "Realizar a filtragem de tráfego entre segmentos de rede, quando apropriado."
+        }
+      },
+      {
+        "13.5": {
+          "Nome": "Gerenciar controle de acesso para ativos remotos",
+          "Descrição": "Gerenciar o controle de acesso para ativos que se conectam remotamente aos recursos da empresa. Determinar a quantidade de acesso aos recursos da empresa com base em: software antimalware atualizado instalado, conformidade de configuração com o processo de configuração seguro da empresa e garantia de que o sistema operacional e os aplicativos estejam atualizados."
+        }
+      },
+      {
+        "13.6": {
+          "Nome": "Coletar registros de fluxo de tráfego de rede",
+          "Descrição": "Coletar logs de fluxo de tráfego de rede e / ou tráfego de rede para revisar e alertar sobre dispositivos de rede."
+        }
+      },
+      {
+        "13.7": {
+          "Nome": "Implantar uma solução de prevenção de intrusão baseada em host",
+          "Descrição": "Implantar uma solução de prevenção de intrusão baseada em host em ativos corporativos, quando apropriado e / ou com suporte. Implementações de exemplo incluem o uso de um cliente Endpoint Detection and Response (EDR) ou agente IPS baseado em host."
+        }
+      },
+      {
+        "13.8": {
+          "Nome": "Implantar uma solução de prevenção de intrusão de rede",
+          "Descrição": "Implantar uma solução de prevenção de intrusão de rede, quando apropriado. Implementações de exemplo incluem o uso de um Sistema de Prevenção de Intrusão de Rede (NIPS) ou serviço CSP equivalente."
+        }
+      },
+      {
+        "13.9": {
+          "Nome": "Implantar controle de acesso no nível da porta",
+          "Descrição": "Implantar o controle de acesso no nível da porta. O controle de acesso no nível da porta utiliza 802.1x ou protocolos de controle de acesso à rede semelhantes, como certificados, e pode incorporar autenticação de usuário e / ou dispositivo."
+        }
+      },
+      {
+        "13.10": {
+          "Nome": "Executar filtragem de camada de aplicativo",
+          "Descrição": "Executar a filtragem da camada de aplicativo. Implementações de exemplo incluem um proxy de filtragem, firewall de camada de aplicativo ou gateway."
+        }
+      },
+      {
+        "13.11": {
+          "Nome": "Ajustar Limites de Alerta de Evento de Segurança",
+          "Descrição": "Ajustar os limites de alerta de eventos de segurança mensalmente ou com maior frequência."
+        }
+      }
+    ]
+  }
+},
+{
+  "Controle_14": {
+    "Nome": "Conscientização de segurança e treinamento de habilidades",
+    "Descrição": "Estabelecer e manter um programa de conscientização de segurança para influenciar o comportamento da força de trabalho a fim de se conscientizar sobre a segurança e se qualificar adequadamente para reduzir os riscos de segurança cibernética para a empresa.",
+    "Subcontroles": [
+      {
+        "14.1": {
+          "Nome": "Estabelecer e manter um programa de conscientização de segurança",
+          "Descrição": "Estabelecer e manter um programa de conscientização de segurança. O objetivo de um programa de conscientização de segurança é educar a força de trabalho da empresa sobre como interagir com ativos e dados corporativos de maneira segura. Realizar o treinamento na contratação e, no mínimo, anualmente. Revisar e atualizar o conteúdo anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        }
+      },
+      {
+        "14.2": {
+          "Nome": "Treinar membros da força de trabalho para reconhecer ataques de engenharia social",
+          "Descrição": "Treinar os membros da força de trabalho para reconhecer ataques de engenharia social, como phishing, pré-mensagens de texto e uso não autorizado."
+        }
+      },
+      {
+        "14.3": {
+          "Nome": "Treinar membros da força de trabalho em boas práticas para autenticação",
+          "Descrição": "Treinar os membros da força de trabalho nas melhores práticas para autenticação. Os tópicos de exemplo incluem MFA, composição de senha e gerenciamento de credenciais."
+        }
+      },
+      {
+        "14.4": {
+          "Nome": "Treinar a força de trabalho nas boas práticas para manuseio de dados",
+          "Descrição": "Treinar os membros da força de trabalho sobre como identificar e armazenar, transferir, arquivar e destruir dados confidenciais de maneira adequada. Isso também inclui o treinamento de membros da força de trabalho em práticas recomendadas de tela limpa e mesa, como bloquear a tela quando eles se afastam de seus ativos corporativos, apagar quadros brancos físicos e virtuais no final das reuniões e armazenar dados e ativos com segurança."
+        }
+      },
+      {
+        "14.5": {
+          "Nome": "Treinar membros da força de trabalho sobre as causas da exposição não intencional de dados",
+          "Descrição": "Treinar os membros da força de trabalho para estarem cientes das causas da exposição não intencional de dados. Os tópicos de exemplo incluem entrega incorreta de dados confidenciais, perda de um dispositivo portátil do usuário final ou publicação de dados para públicos indesejados."
+        }
+      },
+      {
+        "14.6": {
+          "Nome": "Treinar membros da força de trabalho sobre como reconhecer e relatar incidentes de segurança",
+          "Descrição": "Treinar os membros da força de trabalho para serem capazes de reconhecer um incidente potencial e relatar tal incidente."
+        }
+      },
+      {
+        "14.7": {
+          "Nome": "Treinar a força de trabalho sobre como identificar e relatar se seus ativos corporativos estão falhando ao realizar atualizações de segurança",
+          "Descrição": "Treinar a força de trabalho para entender como verificar e relatar patches de software desatualizados ou quaisquer falhas em processos e ferramentas automatizadas. Parte desse treinamento deve incluir a notificação do pessoal de TI sobre quaisquer falhas em processos e ferramentas automatizadas."
+        }
+      },
+      {
+        "14.8": {
+          "Nome": "Treinar a força de trabalho sobre os perigos de se conectar e transmitir dados corporativos em redes inseguras",
+          "Descrição": "Treinar os membros da força de trabalho sobre os perigos de se conectar e transmitir dados em redes inseguras para atividades empresariais. Se a empresa tiver funcionários remotos, o treinamento deve incluir orientação para garantir que todos os usuários configurem com segurança sua infraestrutura de rede doméstica."
+        }
+      },
+      {
+        "14.9": {
+          "Nome": "Realizar treinamento de habilidades e conscientização de segurança para funções específicas",
+          "Descrição": "Conduzir conscientização de segurança e treinamento de habilidades específicas. Implementações de exemplo incluem cursos de administração de sistema seguro para profissionais de TI, treinamento de prevenção e conscientização de vulnerabilidades OWASP® Top 10 para desenvolvedores de aplicativos da web e treinamento de conscientização de engenharia social avançada para funções de alto perfil."
+        }
+      }
+    ]
+  }
+},
+{
+  "Controle_15": {
+    "Nome": "Gestão de Provedores de Serviços",
+    "Descrição": "Desenvolver um processo para avaliar os provedores de serviços que mantêm dados confidenciais, ou são responsáveis ​​por plataformas ou processos de TI críticos de uma empresa, para garantir que esses provedores estejam protegendo essas plataformas e dados de forma adequada.",
+    "Subcontroles": [
+      {
+        "15.1": {
+          "Nome": "Estabelecer e manter um inventário de provedores de serviços",
+          "Descrição": "Estabelecer e manter um inventário de provedores de serviço. O inventário deve listar todos os provedores de serviços conhecidos, incluir classificação(ões) e designar um contato corporativo para cada provedor de serviços. Revisar e atualizar o inventário anualmente ou quando ocorrerem mudanças significativas na empresa que possam impactar esta proteção."
+        }
+      },
+      {
+        "15.2": {
+          "Nome": "Estabelecer e manter uma política de gerenciamento de provedor de serviços",
+          "Descrição": "Estabelecer e manter uma política de gerenciamento de provedor de serviços. Certificar-se de que a política tratar da classificação, inventário, avaliação, monitoramento e desativação de prestadores de serviços. Revisar e atualizar a política anualmente ou quando ocorrerem mudanças significativas na empresa que possam impactar esta proteção."
+        }
+      },
+      {
+        "15.3": {
+          "Nome": "Classificar provedores de serviços",
+          "Descrição": "Classifique os provedores de serviço. A consideração de classificação pode incluir uma ou mais características, como sensibilidade de dados, volume de dados, requisitos de disponibilidade, regulamentos aplicáveis, risco inerente e risco mitigado. Atualizar e analisar as classificações anualmente ou quando ocorrerem mudanças significativas na empresa que possam impactar esta proteção."
+        }
+      },
+      {
+        "15.4": {
+          "Nome": "Garantir que os contratos do provedor de serviços incluam requisitos de segurança",
+          "Descrição": "Certificar-se de que os contratos do provedor de serviços incluam requisitos de segurança. Requisitos de exemplo podem incluir requisitos mínimos do programa de segurança, incidente de segurança e / ou notificação e resposta de violação de dados, requisitos de criptografia de dados e compromissos de descarte de dados. Esses requisitos de segurança devem ser consistentes com a política de gerenciamento do provedor de serviços da empresa. Revisar os contratos do provedor de serviços anualmente para garantir que os contratos não estejam perdendo os requisitos de segurança."
+        }
+      },
+      {
+        "15.5": {
+          "Nome": "Avaliar provedores de serviços",
+          "Descrição": "Avaliar os prestadores de serviços consistentes com a política de gerenciamento de prestadores de serviços da empresa. O escopo da avaliação pode variar com base na(s) classificação(ões) e pode incluir a revisão dos relatórios de avaliação padronizados, como Service Organization Control 2 (SOC 2) e Payment Card Industry (PCI) Attest of Compliance (AoC), questionários personalizados ou outros apropriadamente processos rigorosos. Reavaliar os prestadores de serviços anualmente, no mínimo, ou com contratos novos e renovados."
+        }
+      },
+      {
+        "15.6": {
+          "Nome": "Monitorar provedores de serviços",
+          "Descrição": "Monitorar os provedores de serviços de acordo com a política de gerenciamento de provedores de serviços da empresa. O monitoramento pode incluir reavaliação periódica da conformidade do provedor de serviços, monitoramento de notas de versão do provedor de serviços e monitoramento da dark web."
+        }
+      },
+      {
+        "15.7": {
+          "Nome": "Desativar com segurança provedores de serviços",
+          "Descrição": "Desativar com segurança provedores de serviços. Considerações de exemplo incluem desativação de conta de usuário e serviço, encerramento de fluxos de dados e descarte seguro de dados corporativos em sistemas de provedores de serviços."
+        }
+      }
+    ]
+  }
+},
+{
+  "Controle_16": {
+    "Nome": "Segurança de software de aplicativo",
+    "Descrição": "Gerenciar o ciclo de vida da segurança de software desenvolvido, hospedado ou adquirido internamente para prevenir, detectar e corrigir os pontos fracos de segurança antes que eles afetem a empresa.",
+    "Subcontroles": [
+      {
+        "16.1": {
+          "Nome": "Estabelecer e manter um processo seguro de desenvolvimento de aplicativos",
+          "Descrição": "Estabelecer e manter um processo seguro de desenvolvimento de aplicativos. No processo, tratar de itens como: padrões de design de aplicativo seguro, práticas de codificação seguras, treinamento de desenvolvedor, gerenciamento de vulnerabilidade, segurança de código de terceiros e procedimentos de Testar de segurança de aplicativo. Revisar e atualizar a documentação anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        }
+      },
+      {
+        "16.2": {
+          "Nome": "Estabelecer e manter um processo para aceitar e resolver vulnerabilidades de software",
+          "Descrição": "Estabelecer e manter um processo para aceitar e abordar relatórios de vulnerabilidades de software, incluindo o fornecimento de meios para que entidades externas façam relatórios. O processo deve incluir itens como: uma política de tratamento de vulnerabilidade que identifica o processo de relatório, a parte responsável por lidar com os relatórios de vulnerabilidade e um processo de entrada, atribuição, correção e Testar de correção. Como parte do processo, usar um sistema de rastreamento de vulnerabilidade que inclui classificações de gravidade e métricas para medir o tempo de identificação, análise e remediação de vulnerabilidades. Revisar e atualizar a documentação anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção. Os desenvolvedores de aplicativos de terceiros precisam considerar esta uma política voltada para o exterior que ajuda a definir as expectativas para as partes interessadas externas."
+        }
+      },
+      {
+        "16.3": {
+          "Nome": "Executar análise de causa raiz em vulnerabilidades de segurança",
+          "Descrição": "Executar a análise de causa raiz em vulnerabilidades de segurança. Ao revisar as vulnerabilidades, a análise da causa raiz é a tarefa de avaliar os problemas subjacentes que criam vulnerabilidades no código e permite que as equipes de desenvolvimento vão além de apenas corrigir vulnerabilidades individuais conforme elas surgem."
+        }
+      },
+      {
+        "16.4": {
+          "Nome": "Estabelecer e gerenciar um inventário de componentes de software de terceiros",
+          "Descrição": "Estabelecer e gerenciar um estoque atualizado de componentes de terceiros usados ​​no desenvolvimento, muitas vezes referido como uma “lista de materiais”, bem como componentes programados para uso futuro. Este inventário deve incluir quaisquer riscos que cada componente de terceiros possa representar. Avaliar a lista pelo menos uma vez por mês para identificar quaisquer alterações ou atualizações nesses componentes e validar se o componente ainda é compatível."
+        }
+      },
+      {
+        "16.5": {
+          "Nome": "Usar componentes de software de terceiros atualizados e confiáveis",
+          "Descrição": "Usar componentes de software de terceiros atualizados e confiáveis. Quando possível, escolher bibliotecas e frameworks estabelecidos e comprovados que forneçam segurança adequada. Adquirir esses componentes de fontes confiáveis ​​ou avaliar o software quanto a vulnerabilidades antes de usá-los."
+        }
+      },
+      {
+        "16.6": {
+          "Nome": "Estabelecer e manter um sistema de classificação de gravidade e processo para vulnerabilidades de aplicativos",
+          "Descrição": "Estabelecer e manter um sistema de classificação de gravidade e processo para vulnerabilidades de aplicativos que facilitam a priorização da ordem em que as vulnerabilidades descobertas são corrigidas. Este processo inclui a definição de um nível mínimo de aceitação de segurança para liberação de código ou aplicativos. As classificações de gravidade oferecem uma forma sistemática de triagem de vulnerabilidades que melhora o gerenciamento de riscos e ajuda a garantir que os bugs mais graves sejam corrigidos primeiro. Revisar e atualizar o sistema e processo anualmente."
+        }
+      },
+      {
+        "16.7": {
+          "Nome": "Usar modelos de configuração de proteção padrão para infraestrutura de aplicativos",
+          "Descrição": "Usar modelos de configuração de proteção padrão recomendados pelo setor para componentes de infraestrutura de aplicativos. Isso inclui servidores subjacentes, bancos de dados e servidores da web e se aplica a contêineres de nuvem, componentes de plataforma como serviço (PaaS) e componentes de SaaS. Não permitir que software desenvolvido internamente enfraqueça a proteção da configuração."
+        }
+      },
+      {
+        "16.8": {
+          "Nome": "Sistemas de produção e não produção separados",
+          "Descrição": "Manter ambientes separados para sistemas de produção e não produção."
+        }
+      },
+      {
+        "16.9": {
+          "Nome": "Treinar desenvolvedores em conceitos de segurança de aplicativos e codificação segura",
+          "Descrição": "Certificar-se de que todo o pessoal de desenvolvimento de software receba treinamento para escrever código seguro para seu ambiente de desenvolvimento e responsabilidades específicas. O treinamento pode incluir princípios gerais de segurança e práticas padrão de segurança de aplicativos. Conduza o treinamento pelo menos uma vez por ano e projete de forma a promover a segurança dentro da equipe de desenvolvimento e construir uma cultura de segurança entre os desenvolvedores."
+        }
+      },
+      {
+        "16.10": {
+          "Nome": "Aplicar princípios de design seguro em arquiteturas de aplicativos",
+          "Descrição": "Aplicar princípios de design seguro em arquiteturas de aplicativos. Os princípios de design seguro incluem o conceito de privilégio mínimo e imposição de mediação para validar cada operação que o usuário faz, promovendo o conceito de 'nunca confiar na entrada do usuário'. Os exemplos incluem garantir que a verificação explícita de erros seja realizada e documentada para todas as entradas, incluindo tamanho, tipo de dados e intervalos ou formatos aceitáveis. O design seguro também significa minimizar a superfície de ataque da infraestrutura do aplicativo, como desligar portas e serviços desprotegidos, remover programas e arquivos desnecessários e renomear ou remover contas padrão."
+        }
+      },
+      {
+        "16.11": {
+          "Nome": "Aproveitar os módulos ou serviços controlados para componentes de segurança de aplicativos",
+          "Descrição": "Aproveitar os módulos ou serviços verificados para os componentes de segurança do aplicativo, tais como gerenciamento de identidade, criptografia e auditoria e registro. O uso de recursos da plataforma em funções críticas de segurança reduzirá a carga de trabalho dos desenvolvedores e minimizará a probabilidade de erros de design ou implementação. Os sistemas operacionais modernos fornecem mecanismos eficazes para identificação, autenticação e autorização e disponibilizam esses mecanismos para os aplicativos. Usar apenas algoritmos de criptografia padronizados, atualmente aceitos e amplamente revisados. Os sistemas operacionais também fornecem mecanismos para criar e manter logs de auditoria seguros."
+        }
+      },
+      {
+        "16.12": {
+          "Nome": "Implementar verificações de segurança em nível de código",
+          "Descrição": "Aplicar ferramentas de análise estática e dinâmica dentro do ciclo de vida do aplicativo para verificar se as práticas de codificação seguras estão sendo seguidas."
+        }
+      },
+      {
+        "16.13": {
+          "Nome": "Realizar teste de penetração de aplicação",
+          "Descrição": "Conduzir o teste de penetração da aplicação. Para aplicações críticas, o teste de penetração autenticado é mais adequado para encontrar vulnerabilidades de lógica de negócios do que a varredura de código e o teste de segurança automatizado. O teste de penetração depende da habilidade do testador para manipular manualmente uma aplicação como um usuário autenticado e não autenticado."
+        }
+      },
+      {
+        "16.14": {
+          "Nome": "Conduzir modelagem de ameaças",
+          "Descrição": "Conduzir a modelagem de ameaças. A modelagem de ameaças é o processo de identificar e abordar as falhas de design de segurança da aplicação em um design, antes que o código seja criado. É conduzido por pessoas especialmente treinadas que avaliam o design da aplicação e medem os riscos de segurança para cada ponto de entrada e nível de acesso. O objetivo é mapear a aplicação, a arquitetura e a infraestrutura de uma forma estruturada para entender seus pontos fracos."
+        }
+      }
+    ]
+  }
+},
+{
+  "Controle_17": {
+    "Nome": "Gerenciamento de resposta a incidentes",
+    "Descrição": "Estabelecer um programa para desenvolver e manter uma capacidade de resposta a incidentes (por exemplo, políticas, planos, procedimentos, funções definidas, treinamento e comunicações) para preparar, detectar e responder rapidamente a um ataque.",
+    "Subcontroles": [
+      {
+        "17.1": {
+          "Nome": "Designar pessoal para gerenciar tratamento de incidentes",
+          "Descrição": "Designar uma pessoa-chave e, pelo menos, um suplente que gerenciará o processo de tratamento de incidentes da empresa. A equipe de gerenciamento é responsável pela coordenação e documentação dos esforços de resposta e recuperação a incidentes e pode consistir em funcionários internos da empresa, fornecedores terceirizados ou uma abordagem híbrida. Se estiver usando um fornecedor terceirizado, designar pelo menos uma pessoa interna da empresa para supervisionar o trabalho de terceiros. Revisar anualmente ou quando ocorrerem mudanças significativas na empresa que possam afetar esta proteção."
+        }
+      },
+      {
+        "17.2": {
+          "Nome": "Estabelecer e manter informações de contato para relatar incidentes de segurança",
+          "Descrição": "Estabelecer e manter as informações de contato das partes que precisam ser informadas sobre os incidentes de segurança. Os contatos podem incluir funcionários internos, fornecedores terceirizados, policiais, provedores de seguros cibernéticos, agências governamentais relevantes, parceiros do Centro de Análise e Compartilhamento de Informações (ISAC) ou outras partes interessadas. Verificar os contatos anualmente para garantir que as informações estejam atualizadas."
+        }
+      },
+      {
+        "17.3": {
+          "Nome": "Estabelecer e manter um processo empresarial para relatar incidentes",
+          "Descrição": "Estabelecer e manter um processo corporativo para a força de trabalho relatar incidentes de segurança. O processo inclui cronograma de relatório, pessoal a quem reportar, mecanismo de relatório e as informações mínimas a serem reportadas. Certificar-se de que o processo esteja publicamente disponível para todos os funcionários. Revisar anualmente ou quando ocorrerem mudanças significativas na empresa que possam impactar esta proteção."
+        }
+      },
+      {
+        "17.4": {
+          "Nome": "Estabelecer e manter um processo de resposta a incidentes",
+          "Descrição": "Estabelecer e manter um processo de resposta a incidentes que aborde funções e responsabilidades, requisitos de conformidade e um plano de comunicação. Revisar anualmente ou quando ocorrerem mudanças significativas na empresa que possam impactar esta proteção."
+        }
+      },
+      {
+        "17.5": {
+          "Nome": "Atribuir funções e responsabilidades principais",
+          "Descrição": "Atribuir funções e responsabilidades principais para resposta a incidentes, incluindo equipe jurídica, TI, segurança da informação, instalações, relações públicas, recursos humanos, respondentes a incidentes e analistas, conforme aplicável. Revisar anualmente ou quando ocorrerem mudanças significativas na empresa que possam impactar esta proteção."
+        }
+      },
+      {
+        "17.6": {
+          "Nome": "Definir mecanismos de comunicação durante a resposta ao incidente",
+          "Descrição": "Determinar quais mecanismos primários e secundários serão usados ​​para se comunicar e relatar durante um incidente de segurança. Os mecanismos podem incluir ligações, e-mails ou cartas. Lembre-se de que certos mecanismos, como e-mails, podem ser afetados durante um incidente de segurança. Revisar anualmente ou quando ocorrerem mudanças significativas na empresa que possam impactar esta proteção."
+        }
+      },
+      {
+        "17.7": {
+          "Nome": "Conduzir exercícios rotineiros de resposta a incidentes",
+          "Descrição": "Planejar e conduzir exercícios de resposta a incidentes de rotina e cenários para o pessoal-chave envolvido no processo de resposta a incidentes para se preparar para responder a incidentes do mundo real. Os exercícios precisam testar os canais de comunicação, tomada de decisão e fluxos de trabalho. Realizar testes anualmente, no mínimo."
+        }
+      },
+      {
+        "17.8": {
+          "Nome": "Conduzir análises pós-incidente",
+          "Descrição": "Realizar análises pós-incidente. As revisões pós-incidente ajudam a prevenir a recorrência do incidente por meio da identificação de lições aprendidas e ações de acompanhamento."
+        }
+      },
+      {
+        "17.9": {
+          "Nome": "Estabelecer e manter limites de incidentes de segurança",
+          "Descrição": "Estabelecer e manter limites de incidentes de segurança, incluindo, no mínimo, a diferenciação entre um incidente e um evento. Os exemplos podem incluir: atividade anormal, vulnerabilidade de segurança, fraqueza de segurança, violação de dados, incidente de privacidade, etc. Revisar anualmente ou quando ocorrerem mudanças corporativas significativas que possam impactar esta proteção."
+        }
+      }
+    ]
+  }
+},
+{
+  "Controle_18": {
+    "Nome": "Teste de Penetração",
+    "Descrição": "Testar a eficácia e a resiliência dos ativos corporativos por meio da identificação e exploração de fraquezas nos controles (pessoas, processos e tecnologia) e da simulação dos objetivos e ações de um invasor.",
+    "Subcontroles": [
+      {
+        "18.1": {
+          "Nome": "Estabelecer e manter um programa de teste de penetração",
+          "Descrição": "Estabelecer e manter um programa de teste de penetração apropriado ao tamanho, complexidade e maturidade da empresa. As características do programa de teste de penetração incluem escopo, como rede, aplicação web, Interface de Programação de Aplicativo (API), serviços hospedados e controles de instalações físicas; frequência; limitações, como horas aceitáveis ​​e tipos de ataque excluídos; informações do ponto de contato; remediação, por exemplo, como as descobertas serão encaminhadas internamente; e requisitos retrospectivos."
+        }
+      },
+      {
+        "18.2": {
+          "Nome": "Realizar testes periódicos de penetração externa",
+          "Descrição": "Realizar testes de penetração externa periódicos com base nos requisitos do programa, pelo menos uma vez por ano. O teste de penetração externa deve incluir reconhecimento empresarial e ambiental para detectar informações exploráveis. O teste de penetração requer habilidades e experiência especializadas e deve ser conduzido por uma parte qualificada. O teste pode ser uma caixa transparente ou uma caixa opaca."
+        }
+      },
+      {
+        "18.3": {
+          "Nome": "Remediar as descobertas do teste de penetração",
+          "Descrição": "Remediar as descobertas do teste de penetração com base na política da empresa para o escopo e priorização da correção."
+        }
+      },
+      {
+        "18.4": {
+          "Nome": "Validar Medidas de Segurança",
+          "Descrição": "Validar as medidas de segurança após cada teste de penetração. Se considerado necessário, modificar os conjuntos de regras e recursos para detectar as técnicas usadas durante o teste."
+        }
+      },
+      {
+        "18.5": {
+          "Nome": "Realizar testes periódicos de penetração interna",
+          "Descrição": "Realizar testes de penetração internos periódicos com base nos requisitos do programa, pelo menos uma vez por ano. O teste pode ser uma caixa transparente ou uma caixa opaca."
+        }
+      }
+    ]
+  }
+}
+]
+
+
+
+
