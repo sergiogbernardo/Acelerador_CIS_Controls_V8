@@ -5,7 +5,7 @@
 O AI CIS Controls V8 é um projeto que visa combinar o poder da inteligência artificial com o reconhecido framework CIS Controls para fornecer uma solução inovadora na avaliação da postura de segurança cibernética.
 
 
-## Sobre o projeto
+# Sobre o projeto
 
 ## Descrição
 
