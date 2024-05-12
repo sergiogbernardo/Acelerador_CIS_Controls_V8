@@ -2,7 +2,8 @@
 
 [![License: MIT](https://img.shields.io/github/license/sergiogbernardo/Acelerador_CIS_Controls_V8)](https://github.com/sergiogbernardo/Acelerador_CIS_Controls_V8/blob/main/LICENSE)
 
-O AI Cis Controls V8 é um projeto que visa combinar o poder da inteligência artificial com o reconhecido framework CIS Controls para fornecer uma solução inovadora na avaliação da postura de segurança cibernética.
+O AI CIS Controls V8 é um projeto que visa combinar o poder da inteligência artificial com o reconhecido framework CIS Controls para fornecer uma solução inovadora na avaliação da postura de segurança cibernética.
+
 
 ## Sobre o projeto
 
@@ -29,6 +30,15 @@ O IA - CIS Controls V8 é um programa desenvolvido para facilitar a avaliação 
 - Ao iniciar o programa, siga as instruções na tela para selecionar um controle ou encerrar o programa.
 - Após escolher um controle, o programa fornecerá detalhes sobre ele e permitirá interações adicionais, se disponíveis.
 
+## Resumo sobre o Center for Internet Security (CIS)
+
+CIS Controls - https://www.cisecurity.org/
+
+O CIS (Center for Internet Security) é uma organização sem fins lucrativos que se dedica a melhorar a segurança cibernética em todo o mundo. Fundada em 2000, o CIS fornece recursos, orientações e melhores práticas para ajudar organizações a protegerem seus sistemas de informação contra ameaças cibernéticas.
+
+O CIS é mais conhecido pelo desenvolvimento e manutenção do CIS Controls (anteriormente conhecido como Critical Security Controls) e do CIS Benchmarks. Os CIS Controls são um conjunto de diretrizes de segurança cibernética amplamente reconhecidas, projetadas para ajudar organizações de todos os tamanhos e setores a melhorarem sua postura de segurança cibernética, priorizando as medidas de segurança mais eficazes. Os CIS Benchmarks, por outro lado, são guias detalhados para a configuração segura de sistemas operacionais, aplicativos e dispositivos.
+
+Além disso, o CIS oferece serviços de avaliação e certificação, educação e treinamento em segurança cibernética, e colabora com governos, setor privado, academia e organizações sem fins lucrativos para promover a conscientização e a adoção das melhores práticas de segurança cibernética em todo o mundo.
 ## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias, correções de bugs ou novas funcionalidades.
 
